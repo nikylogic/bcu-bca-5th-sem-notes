@@ -6,7 +6,10 @@
 [![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![University](https://img.shields.io/badge/University-Bengaluru%20City%20University%20(BCU)-orange.svg)](https://bcu.ac.in)
 [![Course](https://img.shields.io/badge/Course-BCA%205th%20Semester-green.svg)](#)
-[![Scheme](https://img.shields.io/badge/Scheme-NEP%20%2F%20SEP%20Karnataka-purple.svg)](#)
+[![Live Portal](https://img.shields.io/badge/Live%20Portal-Visit%20Website-success.svg?style=flat&logo=safari)](https://nikylogic.github.io/bcu-bca-5th-sem-notes/)
+
+> ### 🌐 [Click Here to Open the Live Online Study Portal](https://nikylogic.github.io/bcu-bca-5th-sem-notes/)
+> Read the complete solved question banks online or download the print-ready PDFs directly on your mobile or PC without any sign-in!
 
 ---
 
@@ -21,7 +24,7 @@ Based on the official University notification (Dated: 24-11-2026):
 | **29-12-2026** | Tuesday | 02:00 PM – 05:00 PM | **DCCA512** | **Data Analytics** | [📥 Download PDF](pdfs/DCCA512_Data_Analytics_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf) | [🌐 Read Online](web-viewers/DCCA512_Data_Analytics.html) |
 | **31-12-2026** | Thursday | 02:00 PM – 05:00 PM | **DCCA514** | **Cryptography and Network Security** | [📥 Download PDF](pdfs/DCCA514_Cryptography_Network_Security_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf) | [🌐 Read Online](web-viewers/DCCA514_Cryptography_Network_Security.html) |
 
-*(Note: DSCA517 Quantitative Technique exam is on 21-12-2026; study material is currently in progress).*
+*(Note: DSCA517 Quantitative Technique exam is on 21-12-2026; study material is currently in preparation).*
 
 ---
 
@@ -71,7 +74,7 @@ Every subject in this repository has been thoroughly compiled and solved followi
 ---
 
 ## 🚀 How to Read / Use This Repository
-* **On Mobile / Phone:** Download any of the `.pdf` files from the [`pdfs/`](pdfs/) folder for offline reading.
+* **On Mobile / Phone:** Open the [Live Web Portal](https://nikylogic.github.io/bcu-bca-5th-sem-notes/) or download any of the `.pdf` files from the [`pdfs/`](pdfs/) folder for offline reading.
 * **On Desktop / Browser:** Click any of the **Online Web Viewer** links to open the complete interactive HTML notes with responsive styling.
 * **Direct Printing:** All PDFs have been formatted with standard margins, print-ready page breaks, and clean fonts for photocopy and printing.
 
