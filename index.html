@@ -17,10 +17,6 @@
       --text-sub: #334155;
       --border: #e2e8f0;
       --border-dark: #0f172a;
-      --accent: #2563eb;
-      --accent-soft: #eff6ff;
-      --green: #059669;
-      --green-soft: #ecfdf5;
       --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
       --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
       --radius: 12px;
@@ -44,7 +40,7 @@
       line-height: 1.5;
       color: var(--text-main);
       background-color: var(--bg);
-      padding: 16px 16px 80px 16px;
+      padding: 20px 16px 80px 16px;
     }
 
     .container {
@@ -55,9 +51,9 @@
     /* Minimalist Publication Header */
     header {
       text-align: center;
-      padding: 24px 8px 24px 8px;
+      padding: 28px 8px 24px 8px;
       border-bottom: 2px solid var(--text-main);
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
     .univ-tag {
@@ -119,46 +115,6 @@
       text-decoration: none;
     }
 
-    /* Share Banner for WhatsApp */
-    .share-bar {
-      background: #ffffff;
-      border: 1px solid #bbf7d0;
-      border-left: 4px solid #16a34a;
-      border-radius: 8px;
-      padding: 12px 14px;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .share-text {
-      font-size: 13px;
-      color: #14532d;
-      font-weight: 500;
-    }
-
-    .share-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #16a34a;
-      color: #ffffff;
-      font-size: 12px;
-      font-weight: 700;
-      padding: 7px 12px;
-      border-radius: 6px;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: background 0.15s;
-    }
-
-    .share-btn:active {
-      background: #15803d;
-      transform: scale(0.97);
-    }
-
     /* Section Headings */
     .section-head {
       display: flex;
@@ -192,14 +148,14 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
     .schedule-item {
       background: #ffffff;
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 10px 14px;
+      padding: 11px 14px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -237,9 +193,9 @@
     .sched-date {
       font-size: 12px;
       font-weight: 600;
-      color: #b45309;
-      background: #fffbeb;
-      border: 1px solid #fef3c7;
+      color: #92400e;
+      background: #fef3c7;
+      border: 1px solid #fde68a;
       padding: 2px 8px;
       border-radius: 9999px;
       white-space: nowrap;
@@ -411,15 +367,7 @@
       }
       .btn {
         font-size: 13px;
-        padding: 0 8px;
-      }
-      .share-bar {
-        flex-direction: column;
-        align-items: stretch;
-        text-align: center;
-      }
-      .share-btn {
-        justify-content: center;
+        padding: 0 6px;
       }
     }
   </style>
@@ -439,15 +387,6 @@
         <span class="pill"><a href="https://github.com/nikylogic/bcu-bca-5th-sem-notes" target="_blank">★ View on GitHub</a></span>
       </div>
     </header>
-
-    <!-- WhatsApp Share Helper for Students -->
-    <div class="share-bar">
-      <div class="share-text">📢 Share these verified solved papers with your classmates!</div>
-      <a class="share-btn" href="https://api.whatsapp.com/send?text=Hey!%20Check%20out%20the%20verified%20solved%20question%20banks%20for%20BCU%20BCA%205th%20Sem%20(Software%20Engineering,%20Web%20Programming,%20Data%20Analytics,%20Cryptography):%20https://nikylogic.github.io/bcu-bca-5th-sem-notes/" target="_blank">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
-        Share on WhatsApp
-      </a>
-    </div>
 
     <!-- Quick Examination Schedule -->
     <div class="section-head">
