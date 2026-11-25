@@ -2,410 +2,613 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>BCU BCA 5th Sem — Solved Question Banks | Nikhil P</title>
-  <meta name="description" content="Complete Solved Model Question Banks for Bengaluru City University (BCU) BCA 5th Semester examinations. Curated and verified by Nikhil P.">
+  <meta name="description" content="Complete Solved Model Question Banks for Bengaluru City University (BCU) BCA 5th Semester examinations. Software Engineering, Web Programming, Cryptography, and Data Analytics.">
   <style>
+    :root {
+      --bg: #fafafa;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-sub: #334155;
+      --border: #e2e8f0;
+      --border-dark: #0f172a;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+      --green: #059669;
+      --green-soft: #ecfdf5;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --radius: 12px;
+    }
+
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      -webkit-tap-highlight-color: transparent;
     }
 
     html {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-      color: #111827;
-      background-color: #fcfcfc;
-      padding: 40px 20px 80px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      color: var(--text-main);
+      background-color: var(--bg);
+      padding: 16px 16px 80px 16px;
     }
 
-    .wrapper {
-      max-width: 860px;
+    .container {
+      max-width: 760px;
       margin: 0 auto;
     }
 
     /* Minimalist Publication Header */
-    .header {
+    header {
       text-align: center;
-      padding-bottom: 28px;
-      margin-bottom: 36px;
-      border-bottom: 2px solid #111827;
+      padding: 24px 8px 24px 8px;
+      border-bottom: 2px solid var(--text-main);
+      margin-bottom: 24px;
     }
 
     .univ-tag {
-      font-size: 13px;
-      font-weight: 600;
+      font-size: 11px;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      color: #4b5563;
+      color: var(--text-muted);
       margin-bottom: 8px;
+      display: inline-block;
     }
 
     .main-title {
-      font-size: 26px;
+      font-size: clamp(22px, 6vw, 30px);
       font-weight: 800;
-      color: #111827;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
+      color: var(--text-main);
+      letter-spacing: -0.6px;
+      line-height: 1.25;
+      margin-bottom: 8px;
     }
 
     .sub-title {
-      font-size: 15px;
-      font-weight: 500;
-      color: #4b5563;
-      margin-bottom: 12px;
+      font-size: clamp(13px, 3.8vw, 15px);
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 400;
     }
 
-    .meta-line {
+    .meta-badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .pill {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--text-sub);
       display: inline-flex;
       align-items: center;
-      gap: 16px;
-      font-size: 13px;
-      color: #6b7280;
-      flex-wrap: wrap;
-      justify-content: center;
+      gap: 5px;
     }
 
-    .meta-line a {
-      color: #111827;
-      text-decoration: underline;
-      font-weight: 600;
+    .pill-accent {
+      background: var(--text-main);
+      color: #ffffff;
+      border-color: var(--text-main);
     }
 
-    .badge-pill {
-      background: #f3f4f6;
-      border: 1px solid #e5e7eb;
-      padding: 2px 10px;
-      border-radius: 9999px;
-      font-weight: 600;
-      color: #374151;
-      font-size: 12px;
+    .pill a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    /* Timetable Table */
-    .section-title {
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #374151;
-      margin: 32px 0 14px 0;
+    /* Share Banner for WhatsApp */
+    .share-bar {
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-left: 4px solid #16a34a;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 24px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .share-text {
+      font-size: 13px;
+      color: #14532d;
+      font-weight: 500;
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #16a34a;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 7px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.15s;
+    }
+
+    .share-btn:active {
+      background: #15803d;
+      transform: scale(0.97);
+    }
+
+    /* Section Headings */
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 28px 0 12px 0;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .section-title::before {
       content: "";
       display: inline-block;
       width: 4px;
-      height: 14px;
-      background: #111827;
+      height: 13px;
+      background: var(--text-main);
       border-radius: 2px;
     }
 
-    .table-container {
-      overflow-x: auto;
-      margin-bottom: 36px;
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      background: #ffffff;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-      text-align: left;
-    }
-
-    th {
-      background: #f9fafb;
-      font-weight: 600;
-      color: #374151;
-      padding: 10px 16px;
-      border-bottom: 1px solid #e5e7eb;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    td {
-      padding: 12px 16px;
-      border-bottom: 1px solid #f3f4f6;
-      color: #1f2937;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    .code-badge {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-weight: 700;
-      font-size: 12px;
-      background: #f3f4f6;
-      border: 1px solid #e5e7eb;
-      padding: 2px 6px;
-      border-radius: 4px;
-      color: #111827;
-    }
-
-    /* Subject Cards Grid */
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-      margin-top: 14px;
-    }
-
-    .subject-card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      padding: 22px 24px;
-      transition: border-color 0.15s, box-shadow 0.15s;
-    }
-
-    .subject-card:hover {
-      border-color: #cbd5e1;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-    }
-
-    .card-top {
+    /* Timetable / Quick Schedule List (Mobile First) */
+    .schedule-list {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .schedule-item {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
       align-items: center;
-      margin-bottom: 8px;
-      flex-wrap: wrap;
+      justify-content: space-between;
       gap: 8px;
     }
 
-    .card-date {
+    .sched-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .sched-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 800;
+      font-size: 11px;
+      background: #f1f5f9;
+      color: var(--text-main);
+      padding: 3px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    .sched-name {
       font-size: 13px;
-      color: #6b7280;
-      font-weight: 500;
+      font-weight: 600;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sched-date {
+      font-size: 12px;
+      font-weight: 600;
+      color: #b45309;
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+
+    /* Subject Cards (Mobile Optimized) */
+    .subject-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .card:hover {
+      border-color: #cbd5e1;
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-meta-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .code-chip {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-main);
+      background: #f1f5f9;
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .exam-tag {
+      font-size: 12px;
+      font-weight: 600;
+      color: #92400e;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
 
     .card-title {
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 700;
-      color: #111827;
-      margin-bottom: 8px;
+      color: var(--text-main);
+      margin-bottom: 4px;
       letter-spacing: -0.2px;
+      line-height: 1.3;
+    }
+
+    .card-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 8px 0 10px 0;
+    }
+
+    .mini-badge {
+      font-size: 11px;
+      font-weight: 600;
+      color: #0369a1;
+      background: #f0f9ff;
+      border: 1px solid #e0f2fe;
+      padding: 2px 7px;
+      border-radius: 4px;
     }
 
     .card-desc {
-      font-size: 14px;
-      color: #4b5563;
+      font-size: 13.5px;
+      color: var(--text-sub);
       line-height: 1.55;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
-    /* Minimalist Action Buttons */
-    .btn-group {
+    /* Buttons: Mobile Touch-Friendly (Min Height 44px) */
+    .card-actions {
       display: flex;
       gap: 10px;
-      flex-wrap: wrap;
     }
 
     .btn {
+      flex: 1;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 6px;
-      padding: 8px 16px;
-      border-radius: 6px;
-      font-size: 13px;
+      height: 44px;
+      padding: 0 14px;
+      border-radius: 8px;
+      font-size: 13.5px;
       font-weight: 600;
       text-decoration: none;
-      transition: all 0.15s;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-align: center;
     }
 
-    .btn-primary {
-      background: #111827;
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-download {
+      background: var(--text-main);
       color: #ffffff;
-      border: 1px solid #111827;
+      border: 1px solid var(--text-main);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
 
-    .btn-primary:hover {
-      background: #1f2937;
-      border-color: #1f2937;
+    .btn-download:hover {
+      background: #1e293b;
+      border-color: #1e293b;
     }
 
-    .btn-outline {
+    .btn-read {
       background: #ffffff;
-      color: #374151;
-      border: 1px solid #d1d5db;
+      color: var(--text-main);
+      border: 1px solid #cbd5e1;
     }
 
-    .btn-outline:hover {
-      background: #f9fafb;
-      color: #111827;
-      border-color: #9ca3af;
+    .btn-read:hover {
+      background: #f8fafc;
+      border-color: #94a3b8;
     }
 
     /* Footer */
     footer {
       text-align: center;
-      margin-top: 60px;
+      margin-top: 48px;
       padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-      font-size: 13px;
-      color: #6b7280;
+      border-top: 1px solid var(--border);
+      font-size: 12.5px;
+      color: var(--text-muted);
     }
 
     footer a {
-      color: #111827;
-      text-decoration: none;
+      color: var(--text-main);
       font-weight: 600;
+      text-decoration: none;
     }
 
     footer a:hover {
       text-decoration: underline;
     }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      body {
+        padding: 12px 12px 60px 12px;
+      }
+      .card {
+        padding: 16px 14px;
+      }
+      .card-actions {
+        flex-direction: row;
+        gap: 8px;
+      }
+      .btn {
+        font-size: 13px;
+        padding: 0 8px;
+      }
+      .share-bar {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+      }
+      .share-btn {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="container">
     
     <!-- Minimal Header -->
-    <header class="header">
-      <div class="univ-tag">Dr. Manmohan Singh Bengaluru City University</div>
-      <h1 class="main-title">BCA 5th Semester — Solved Question Banks</h1>
-      <p class="sub-title">Complete 5 Model Question Papers Solved (Sections A, B & C) — NEP / SEP Scheme</p>
-      <div class="meta-line">
-        <span>Curated & Verified by <a href="https://github.com/nikylogic" target="_blank">Nikhil P</a></span>
-        <span>•</span>
-        <span class="badge-pill">Exams: Dec 2026</span>
-        <span>•</span>
-        <a href="https://github.com/nikylogic/bcu-bca-5th-sem-notes" target="_blank">View GitHub Repository ↗</a>
+    <header>
+      <span class="univ-tag">Bengaluru City University (BCU)</span>
+      <h1 class="main-title">BCA 5th Sem Solved Papers</h1>
+      <p class="sub-title">Complete 5 Model Question Papers Solved with Section A, B & C Answers</p>
+      
+      <div class="meta-badges">
+        <span class="pill pill-accent">NEP / SEP Dec 2026</span>
+        <span class="pill">Verified by <strong>Nikhil P</strong></span>
+        <span class="pill"><a href="https://github.com/nikylogic/bcu-bca-5th-sem-notes" target="_blank">★ View on GitHub</a></span>
       </div>
     </header>
 
-    <!-- Overview Table -->
-    <div class="section-title">Official Examination Schedule & Direct Links</div>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Code</th>
-            <th>Subject</th>
-            <th>Downloads & Viewers</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>02-12-2026</strong> (Wed)</td>
-            <td><span class="code-badge">DCCA513</span></td>
-            <td>Software Engineering</td>
-            <td>
-              <a href="pdfs/DCCA513_Software_Engineering_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download style="color:#111827; font-weight:600; text-decoration:none; margin-right:12px;">PDF</a>
-              <a href="web-viewers/DCCA513_Software_Engineering.html" target="_blank" style="color:#4b5563; text-decoration:underline;">Online Viewer</a>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>26-12-2026</strong> (Sat)</td>
-            <td><span class="code-badge">DCCA511</span></td>
-            <td>Web Programming</td>
-            <td>
-              <a href="pdfs/DCCA511_Web_Programming_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download style="color:#111827; font-weight:600; text-decoration:none; margin-right:12px;">PDF</a>
-              <a href="web-viewers/DCCA511_Web_Programming.html" target="_blank" style="color:#4b5563; text-decoration:underline;">Online Viewer</a>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>29-12-2026</strong> (Tue)</td>
-            <td><span class="code-badge">DCCA512</span></td>
-            <td>Data Analytics</td>
-            <td>
-              <a href="pdfs/DCCA512_Data_Analytics_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download style="color:#111827; font-weight:600; text-decoration:none; margin-right:12px;">PDF</a>
-              <a href="web-viewers/DCCA512_Data_Analytics.html" target="_blank" style="color:#4b5563; text-decoration:underline;">Online Viewer</a>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>31-12-2026</strong> (Thu)</td>
-            <td><span class="code-badge">DCCA514</span></td>
-            <td>Cryptography & Network Security</td>
-            <td>
-              <a href="pdfs/DCCA514_Cryptography_Network_Security_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download style="color:#111827; font-weight:600; text-decoration:none; margin-right:12px;">PDF</a>
-              <a href="web-viewers/DCCA514_Cryptography_Network_Security.html" target="_blank" style="color:#4b5563; text-decoration:underline;">Online Viewer</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- WhatsApp Share Helper for Students -->
+    <div class="share-bar">
+      <div class="share-text">📢 Share these verified solved papers with your classmates!</div>
+      <a class="share-btn" href="https://api.whatsapp.com/send?text=Hey!%20Check%20out%20the%20verified%20solved%20question%20banks%20for%20BCU%20BCA%205th%20Sem%20(Software%20Engineering,%20Web%20Programming,%20Data%20Analytics,%20Cryptography):%20https://nikylogic.github.io/bcu-bca-5th-sem-notes/" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+        Share on WhatsApp
+      </a>
     </div>
 
-    <!-- Subject Detail Cards -->
-    <div class="section-title">Study Materials & Solved Papers</div>
-    <div class="grid">
+    <!-- Quick Examination Schedule -->
+    <div class="section-head">
+      <div class="section-title">Examination Timetable</div>
+    </div>
+    
+    <div class="schedule-list">
+      <div class="schedule-item">
+        <div class="sched-left">
+          <span class="sched-code">DCCA513</span>
+          <span class="sched-name">Software Engineering</span>
+        </div>
+        <span class="sched-date">02-12-2026 (Wed)</span>
+      </div>
+      <div class="schedule-item">
+        <div class="sched-left">
+          <span class="sched-code">DCCA511</span>
+          <span class="sched-name">Web Programming</span>
+        </div>
+        <span class="sched-date">26-12-2026 (Sat)</span>
+      </div>
+      <div class="schedule-item">
+        <div class="sched-left">
+          <span class="sched-code">DCCA512</span>
+          <span class="sched-name">Data Analytics</span>
+        </div>
+        <span class="sched-date">29-12-2026 (Tue)</span>
+      </div>
+      <div class="schedule-item">
+        <div class="sched-left">
+          <span class="sched-code">DCCA514</span>
+          <span class="sched-name">Cryptography & Network Security</span>
+        </div>
+        <span class="sched-date">31-12-2026 (Thu)</span>
+      </div>
+    </div>
+
+    <!-- Subject Cards -->
+    <div class="section-head">
+      <div class="section-title">Download Question Banks</div>
+    </div>
+
+    <div class="subject-cards">
 
       <!-- 1. Software Engineering -->
-      <div class="subject-card">
-        <div class="card-top">
-          <span class="code-badge">DCCA513</span>
-          <span class="card-date">Exam: 02-12-2026 (Wednesday, 2:00 PM – 5:00 PM)</span>
+      <div class="card">
+        <div class="card-meta-top">
+          <span class="code-chip">DCCA513</span>
+          <span class="exam-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            02-12-2026 (Wed)
+          </span>
         </div>
-        <div class="card-title">Software Engineering</div>
-        <div class="card-desc">
-          All 5 Model Papers Solved. Covers SDLC Models (Waterfall, Prototype, Spiral, Agile), SRS Requirements (IEEE 830), Coupling & Cohesion, DFDs, V-Model, Black-Box vs White-Box Testing, Cyclomatic Complexity, COCOMO estimation, and Maintenance.
+        <h2 class="card-title">Software Engineering</h2>
+        <div class="card-highlights">
+          <span class="mini-badge">All 5 Papers Solved</span>
+          <span class="mini-badge">SDLC & Diagrams</span>
+          <span class="mini-badge">Testing & Metrics</span>
         </div>
-        <div class="btn-group">
-          <a class="btn btn-primary" href="pdfs/DCCA513_Software_Engineering_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download>Download PDF</a>
-          <a class="btn btn-outline" href="web-viewers/DCCA513_Software_Engineering.html" target="_blank">Read Online</a>
+        <p class="card-desc">
+          Complete answers for Waterfall, Spiral, Agile Scrum, SRS (IEEE 830), Cohesion & Coupling, DFD Levels, V-Model, White/Black-Box Testing, Cyclomatic Complexity, and COCOMO.
+        </p>
+        <div class="card-actions">
+          <a class="btn btn-download" href="pdfs/DCCA513_Software_Engineering_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </a>
+          <a class="btn btn-read" href="web-viewers/DCCA513_Software_Engineering.html" target="_blank">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Read Online
+          </a>
         </div>
       </div>
 
       <!-- 2. Web Programming -->
-      <div class="subject-card">
-        <div class="card-top">
-          <span class="code-badge">DCCA511</span>
-          <span class="card-date">Exam: 26-12-2026 (Saturday, 2:00 PM – 5:00 PM)</span>
+      <div class="card">
+        <div class="card-meta-top">
+          <span class="code-chip">DCCA511</span>
+          <span class="exam-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            26-12-2026 (Sat)
+          </span>
         </div>
-        <div class="card-title">Web Programming</div>
-        <div class="card-desc">
-          All 5 Model Papers Solved. Complete coverage of HTML5 semantic structure, CSS3 Flexbox/Grid, JavaScript DOM manipulation and event models, PHP superglobals, MySQL connectivity, and XML/JSON data interchange.
+        <h2 class="card-title">Web Programming</h2>
+        <div class="card-highlights">
+          <span class="mini-badge">All 5 Papers Solved</span>
+          <span class="mini-badge">HTML5/CSS3/JS</span>
+          <span class="mini-badge">PHP & MySQL</span>
         </div>
-        <div class="btn-group">
-          <a class="btn btn-primary" href="pdfs/DCCA511_Web_Programming_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download>Download PDF</a>
-          <a class="btn btn-outline" href="web-viewers/DCCA511_Web_Programming.html" target="_blank">Read Online</a>
+        <p class="card-desc">
+          Complete answers with full code listings for HTML5 Semantic Tags, CSS3 Grid/Flexbox, JavaScript DOM scripting, PHP superglobals, MySQL queries, and XML/JSON parsers.
+        </p>
+        <div class="card-actions">
+          <a class="btn btn-download" href="pdfs/DCCA511_Web_Programming_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </a>
+          <a class="btn btn-read" href="web-viewers/DCCA511_Web_Programming.html" target="_blank">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Read Online
+          </a>
         </div>
       </div>
 
       <!-- 3. Data Analytics -->
-      <div class="subject-card">
-        <div class="card-top">
-          <span class="code-badge">DCCA512</span>
-          <span class="card-date">Exam: 29-12-2026 (Tuesday, 2:00 PM – 5:00 PM)</span>
+      <div class="card">
+        <div class="card-meta-top">
+          <span class="code-chip">DCCA512</span>
+          <span class="exam-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            29-12-2026 (Tue)
+          </span>
         </div>
-        <div class="card-title">Data Analytics</div>
-        <div class="card-desc">
-          Complete Solved Question Bank. Descriptive & inferential statistics, data cleaning pipelines, regression models, clustering algorithms, machine learning classification, and data visualization.
+        <h2 class="card-title">Data Analytics</h2>
+        <div class="card-highlights">
+          <span class="mini-badge">All 5 Papers Solved</span>
+          <span class="mini-badge">Statistics & ML</span>
+          <span class="mini-badge">Regression & Clustering</span>
         </div>
-        <div class="btn-group">
-          <a class="btn btn-primary" href="pdfs/DCCA512_Data_Analytics_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download>Download PDF</a>
-          <a class="btn btn-outline" href="web-viewers/DCCA512_Data_Analytics.html" target="_blank">Read Online</a>
+        <p class="card-desc">
+          Complete solutions for Descriptive/Inferential Statistics, Data Cleaning, Regression Models, Clustering, Confusion Matrix, Classification, and Data Visualization.
+        </p>
+        <div class="card-actions">
+          <a class="btn btn-download" href="pdfs/DCCA512_Data_Analytics_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </a>
+          <a class="btn btn-read" href="web-viewers/DCCA512_Data_Analytics.html" target="_blank">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Read Online
+          </a>
         </div>
       </div>
 
       <!-- 4. Cryptography and Network Security -->
-      <div class="subject-card">
-        <div class="card-top">
-          <span class="code-badge">DCCA514</span>
-          <span class="card-date">Exam: 31-12-2026 (Thursday, 2:00 PM – 5:00 PM)</span>
+      <div class="card">
+        <div class="card-meta-top">
+          <span class="code-chip">DCCA514</span>
+          <span class="exam-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            31-12-2026 (Thu)
+          </span>
         </div>
-        <div class="card-title">Cryptography and Network Security</div>
-        <div class="card-desc">
-          All 5 Model Papers Solved. Classical ciphers, DES round structure, AES state transformations, RSA & Diffie-Hellman step-by-step numerical calculations, SHA-512, Kerberos, SSL/TLS, and IPsec architecture.
+        <h2 class="card-title">Cryptography & Security</h2>
+        <div class="card-highlights">
+          <span class="mini-badge">All 5 Papers Solved</span>
+          <span class="mini-badge">RSA / AES / DES</span>
+          <span class="mini-badge">Full Numericals</span>
         </div>
-        <div class="btn-group">
-          <a class="btn btn-primary" href="pdfs/DCCA514_Cryptography_Network_Security_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download>Download PDF</a>
-          <a class="btn btn-outline" href="web-viewers/DCCA514_Cryptography_Network_Security.html" target="_blank">Read Online</a>
+        <p class="card-desc">
+          Complete answers for Classical Ciphers, DES/AES algorithms, RSA & Diffie-Hellman mathematical numericals, SHA-512, Kerberos, SSL/TLS, and IPsec architecture.
+        </p>
+        <div class="card-actions">
+          <a class="btn btn-download" href="pdfs/DCCA514_Cryptography_Network_Security_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf" download>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </a>
+          <a class="btn btn-read" href="web-viewers/DCCA514_Cryptography_Network_Security.html" target="_blank">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Read Online
+          </a>
         </div>
       </div>
 
@@ -413,8 +616,8 @@
 
     <!-- Minimal Footer -->
     <footer>
-      <p>Prepared & compiled for academic revision by <a href="https://github.com/nikylogic" target="_blank">Nikhil P</a>.</p>
-      <p style="margin-top: 4px; font-size: 12px; color: #9ca3af;">Based on the official curriculum of Dr. Manmohan Singh Bengaluru City University (NEP/SEP).</p>
+      <p>Curated & verified for BCU BCA students by <a href="https://github.com/nikylogic" target="_blank">Nikhil P</a>.</p>
+      <p style="margin-top: 4px; font-size: 11.5px; color: #94a3b8;">Based on the NEP/SEP curriculum of Dr. Manmohan Singh Bengaluru City University.</p>
     </footer>
 
   </div>
