@@ -1,0 +1,35 @@
+# Robots.txt for BCU BCA 5th Sem Solved Notes
+# https://nikylogic.github.io/bcu-bca-5th-sem-notes/
+
+User-agent: *
+Allow: /
+
+# Explicit permission for AI crawlers and search agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://nikylogic.github.io/bcu-bca-5th-sem-notes/sitemap.xml

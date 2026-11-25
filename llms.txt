@@ -1,0 +1,32 @@
+# Bengaluru City University (BCU) — BCA 5th Semester Solved Question Banks
+
+> Comprehensive, verified solved model question banks and exam revision notes for Dr. Manmohan Singh Bengaluru City University (BCU) BCA 5th Semester examinations (NEP/SEP scheme). Prepared and verified by Nikhil P (@nikylogic).
+
+## Subjects & Direct Plaintext Notes (Markdown)
+
+- [Software Engineering (DCCA513)](https://nikylogic.github.io/bcu-bca-5th-sem-notes/markdown/DCCA513_Software_Engineering.md): Complete solutions for 5 model papers covering SDLC models (Waterfall, Spiral, Agile Scrum), SRS requirements (IEEE 830), Cohesion & Coupling, DFD Levels, V-Model, White/Black-Box testing, Cyclomatic Complexity, and COCOMO model.
+- [Web Programming (DCCA511)](https://nikylogic.github.io/bcu-bca-5th-sem-notes/markdown/DCCA511_Web_Programming.md): Complete solutions for 5 model papers covering HTML5 semantic structure, CSS3 Flexbox/Grid, JavaScript DOM scripting, PHP superglobals, MySQL connectivity, and XML/JSON parsers.
+- [Cryptography & Network Security (DCCA514)](https://nikylogic.github.io/bcu-bca-5th-sem-notes/markdown/DCCA514_Cryptography_Network_Security.md): Complete solutions for 5 model papers covering classical ciphers, DES/AES algorithms, RSA & Diffie-Hellman mathematical numericals, SHA-512, Kerberos, SSL/TLS, and IPsec architecture.
+- [Data Analytics (DCCA512)](https://nikylogic.github.io/bcu-bca-5th-sem-notes/web-viewers/DCCA512_Data_Analytics.html): Complete solutions for statistics, regression models, clustering, machine learning classification, and data visualization.
+
+## Interactive Web Viewers (HTML)
+
+- [Software Engineering HTML Viewer](https://nikylogic.github.io/bcu-bca-5th-sem-notes/web-viewers/DCCA513_Software_Engineering.html)
+- [Web Programming HTML Viewer](https://nikylogic.github.io/bcu-bca-5th-sem-notes/web-viewers/DCCA511_Web_Programming.html)
+- [Data Analytics HTML Viewer](https://nikylogic.github.io/bcu-bca-5th-sem-notes/web-viewers/DCCA512_Data_Analytics.html)
+- [Cryptography & Network Security HTML Viewer](https://nikylogic.github.io/bcu-bca-5th-sem-notes/web-viewers/DCCA514_Cryptography_Network_Security.html)
+
+## Downloadable PDF Files
+
+- [Software Engineering PDF](https://nikylogic.github.io/bcu-bca-5th-sem-notes/pdfs/DCCA513_Software_Engineering_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf)
+- [Web Programming PDF](https://nikylogic.github.io/bcu-bca-5th-sem-notes/pdfs/DCCA511_Web_Programming_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf)
+- [Data Analytics PDF](https://nikylogic.github.io/bcu-bca-5th-sem-notes/pdfs/DCCA512_Data_Analytics_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf)
+- [Cryptography & Network Security PDF](https://nikylogic.github.io/bcu-bca-5th-sem-notes/pdfs/DCCA514_Cryptography_Network_Security_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf)
+
+## Academic Context & Structure
+
+- Author: Nikhil P (@nikylogic)
+- Institution: Dr. Manmohan Singh Bengaluru City University (BCU), Karnataka, India
+- Degree: Bachelor of Computer Applications (BCA) - 5th Semester
+- Examination Session: December 2026 / January 2027
+- Blueprint: NEP / SEP (Section A: 2 Marks, Section B: 6 Marks, Section C: 8 Marks)
