@@ -17,14 +17,13 @@
 
 Based on the official University notification (Dated: 24-11-2026):
 
-| Date | Day | Time | Course Code | Subject Name | PDF Download | Online Web Viewer |
+| Date | Day | Time | Course Code | Subject Name | Status / PDF | Online Web Viewer |
 |:---:|:---:|:---:|:---:|:---|:---:|:---:|
 | **02-12-2026** | Wednesday | 02:00 PM – 05:00 PM | **DCCA513** | **Software Engineering** | [📥 Download PDF](pdfs/DCCA513_Software_Engineering_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf) | [🌐 Read Online](web-viewers/DCCA513_Software_Engineering.html) |
+| **21-12-2026** | Monday | 02:00 PM – 03:30 PM | **DSCA517** | **Quantitative Technique (SEC)** | *⏳ In Preparation* | *⏳ Coming Soon* |
 | **26-12-2026** | Saturday | 02:00 PM – 05:00 PM | **DCCA511** | **Web Programming** | [📥 Download PDF](pdfs/DCCA511_Web_Programming_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf) | [🌐 Read Online](web-viewers/DCCA511_Web_Programming.html) |
 | **29-12-2026** | Tuesday | 02:00 PM – 05:00 PM | **DCCA512** | **Data Analytics** | [📥 Download PDF](pdfs/DCCA512_Data_Analytics_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf) | [🌐 Read Online](web-viewers/DCCA512_Data_Analytics.html) |
 | **31-12-2026** | Thursday | 02:00 PM – 05:00 PM | **DCCA514** | **Cryptography and Network Security** | [📥 Download PDF](pdfs/DCCA514_Cryptography_Network_Security_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf) | [🌐 Read Online](web-viewers/DCCA514_Cryptography_Network_Security.html) |
-
-*(Note: DSCA517 Quantitative Technique exam is on 21-12-2026; study material is currently in preparation).*
 
 ---
 
@@ -46,7 +45,11 @@ Every subject in this repository has been thoroughly compiled and solved followi
   * **Unit IV:** 4 Maintenance Types, Reverse/Re-engineering, SQA, Basic COCOMO Model, and RMMM Risk Planning.
 * [📥 Download Software Engineering PDF](pdfs/DCCA513_Software_Engineering_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf)
 
-### 2. DCCA511: Web Programming
+### 2. DSCA517: Quantitative Technique (SEC)
+* **Exam Date:** 21-12-2026 (Monday)
+* **Status:** *⏳ Material currently in preparation.*
+
+### 3. DCCA511: Web Programming
 * **Exam Date:** 26-12-2026 (Saturday)
 * **Coverage:**
   * HTML5 semantic tags, CSS3 Box Model, Flexbox, and Grid layouts.
@@ -54,7 +57,7 @@ Every subject in this repository has been thoroughly compiled and solved followi
   * PHP server-side scripting, superglobals (`$_GET`, `$_POST`, `$_SESSION`), MySQL database connectivity, and XML/JSON parsers.
 * [📥 Download Web Programming PDF](pdfs/DCCA511_Web_Programming_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf)
 
-### 3. DCCA512: Data Analytics
+### 4. DCCA512: Data Analytics
 * **Exam Date:** 29-12-2026 (Tuesday)
 * **Coverage:**
   * Descriptive vs Inferential Statistics, Mean/Median/Mode, Variance, and Standard Deviation.
@@ -62,7 +65,7 @@ Every subject in this repository has been thoroughly compiled and solved followi
   * Supervised vs Unsupervised Machine Learning, Linear/Logistic Regression, Decision Trees, K-Means Clustering, and Model Evaluation metrics (Confusion Matrix, Precision, Recall, F1-Score).
 * [📥 Download Data Analytics PDF](pdfs/DCCA512_Data_Analytics_Solved_Question_Bank_BCU_BCA_5th_Sem.pdf)
 
-### 4. DCCA514: Cryptography and Network Security
+### 5. DCCA514: Cryptography and Network Security
 * **Exam Date:** 31-12-2026 (Thursday)
 * **Coverage:**
   * **Unit I:** OSI Security Architecture, Security Attacks (Active vs Passive), Classical Encryption (Caesar, Playfair, Hill, Vigenère, Rail Fence).
@@ -81,7 +84,7 @@ Every subject in this repository has been thoroughly compiled and solved followi
 ---
 
 ## 🔍 Search Keywords (Indexing Reference)
-`BCU BCA 5th Sem Notes` • `Bengaluru City University BCA Solved Question Bank` • `DCCA513 Software Engineering Question Paper Answers` • `DCCA511 Web Programming Solved Model Papers` • `DCCA514 Cryptography and Network Security Solved Papers` • `DCCA512 Data Analytics BCA Notes` • `BCU BCA NEP Syllabus 2024 2025 2026` • `Nikhil P BCA Solved Question Bank`
+`BCU BCA 5th Sem Notes` • `Bengaluru City University BCA Solved Question Bank` • `DCCA513 Software Engineering Question Paper Answers` • `DCCA511 Web Programming Solved Model Papers` • `DCCA514 Cryptography and Network Security Solved Papers` • `DCCA512 Data Analytics BCA Notes` • `DSCA517 Quantitative Technique BCA 5th Sem` • `BCU BCA NEP Syllabus 2024 2025 2026` • `Nikhil P BCA Solved Question Bank`
 
 ---
 
