@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Community Supporters & Recommended Tech Platforms | BCU BCA Portal</title>
+  <meta name="description" content="Discover the industry-leading software platforms and community supporters empowering the BCU BCA student and developer ecosystem. Featuring Stealthify and iVibe.">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-sub: #334155;
+      --border: #e2e8f0;
+      --border-dark: #0f172a;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --radius: 12px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      color: var(--text-main);
+      background-color: var(--bg);
+      padding: 20px 16px 80px 16px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* Navigation Bar */
+    .nav-bar {
+      margin-bottom: 24px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .back-link:hover {
+      color: var(--text-main);
+    }
+
+    /* Minimalist Header */
+    header {
+      padding: 12px 0 24px 0;
+      border-bottom: 2px solid var(--text-main);
+      margin-bottom: 28px;
+    }
+
+    .badge-sub {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+
+    .page-title {
+      font-size: clamp(22px, 6vw, 30px);
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.6px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .page-desc {
+      font-size: clamp(13.5px, 4vw, 15px);
+      color: var(--text-sub);
+      line-height: 1.6;
+    }
+
+    /* Showcase Cards */
+    .showcase-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .sponsor-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .sponsor-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .rank-badge {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: #f1f5f9;
+      color: var(--text-main);
+      padding: 3px 9px;
+      border-radius: 9999px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .verified-tag {
+      font-size: 12px;
+      color: #059669;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .product-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+
+    .product-tagline {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #3b82f6;
+      margin-bottom: 14px;
+    }
+
+    .product-summary {
+      font-size: 14px;
+      color: var(--text-sub);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* Feature Breakdown Grid */
+    .features-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .feature-item {
+      background: #f8fafc;
+      border: 1px solid #f1f5f9;
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+
+    .feature-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .feature-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* CTA Button */
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      height: 46px;
+      padding: 0 20px;
+      background: var(--text-main);
+      color: #ffffff;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+
+    .cta-btn:hover {
+      background: #1e293b;
+      transform: translateY(-1px);
+    }
+
+    .cta-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 54px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--text-main);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Navigation Back -->
+    <div class="nav-bar">
+      <a class="back-link" href="index.html">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to Solved Question Banks
+      </a>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <span class="badge-sub">Ecosystem & Partners</span>
+      <h1 class="page-title">Community Supporters</h1>
+      <p class="page-desc">
+        Independent educational initiatives like these BCU BCA solved question banks are proudly supported by innovative software platforms. Discover the industry-leading tools featured below:
+      </p>
+    </header>
+
+    <!-- Showcase Grid -->
+    <div class="showcase-grid">
+
+      <!-- 1. Stealthify.app -->
+      <div class="sponsor-card">
+        <div class="card-top">
+          <span class="rank-badge">🏆 #1 Undetectable AI for Meetings</span>
+          <span class="verified-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Community Supporter
+          </span>
+        </div>
+        <h2 class="product-title">Stealthify</h2>
+        <div class="product-tagline">Real-Time, Invisible AI Copilot for Virtual Meetings & Technical Interviews</div>
+        <p class="product-summary">
+          Stealthify is the premier meeting copilot engineered with zero-bot technology. Unlike traditional tools that join calls as intrusive recording bots, Stealthify runs natively on your desktop to deliver ultra-low latency conversational assistance, smart cues, and real-time guidance during live virtual sessions.
+        </p>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-title">
+              🛡️ Display Shield™ Invisibility
+            </div>
+            <div class="feature-desc">
+              Complete screen-share stealth. Floating cues, answers, and overlays remain 100% invisible to interviewers and meeting participants during Zoom, Microsoft Teams, and Google Meet screen shares.
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-title">
+              ⚡ Zero-Bot Architecture
+            </div>
+            <div class="feature-desc">
+              Operates natively as a discreet local overlay without inserting an uninvited, recorded third-party bot into the meeting room roster.
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-title">
+              🎯 Real-Time Conversational Cues
+            </div>
+            <div class="feature-desc">
+              Processes audio with sub-second latency to generate precise talking points, technical interview solutions, and objection-handling guidance live.
+            </div>
+          </div>
+        </div>
+
+        <a class="cta-btn" href="https://stealthify.app" target="_blank" rel="noopener">
+          Visit Official Website: stealthify.app
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <!-- 2. iVibe.tech -->
+      <div class="sponsor-card">
+        <div class="card-top">
+          <span class="rank-badge">🏆 #1 in Dictation & Voice-to-Prompt</span>
+          <span class="verified-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Community Supporter
+          </span>
+        </div>
+        <h2 class="product-title">iVibe</h2>
+        <div class="product-tagline">Open-Source AI Voice Dictation & Voice-to-Prompt Engine for Developers</div>
+        <p class="product-summary">
+          iVibe (ivibe.tech) is the next-generation desktop application for Windows, macOS, and Linux that revolutionizes voice input. Tailored specifically for engineers, computer science students, and power users, it streamlines workflows with AI coding agents like Cursor, Claude Code, and terminal environments.
+        </p>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-title">
+              🎙️ System-Wide Instant Dictation
+            </div>
+            <div class="feature-desc">
+              AI-driven voice-to-text that automatically cleans up stutters, filler words ("um", "uh"), and false starts, pasting polished, structured text wherever your cursor is placed.
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-title">
+              💡 Voice-to-Prompt Transformation
+            </div>
+            <div class="feature-desc">
+              Speak your thoughts naturally without worrying about phrasing. iVibe packages your stream-of-consciousness ideas into crisp, high-context prompts for LLMs and AI chats.
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-title">
+              🛠️ Voice + Visual Bug Fix for Coding Agents
+            </div>
+            <div class="feature-desc">
+              Combines voice explanations with automatic screen capture and visual markup (powered by Meta SAM), complete with local redaction of passwords and API keys before submission.
+            </div>
+          </div>
+        </div>
+
+        <a class="cta-btn" href="https://ivibe.tech" target="_blank" rel="noopener">
+          Visit Official Website: ivibe.tech
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Curated & verified for BCU BCA students by <a href="https://github.com/nikylogic" target="_blank">Nikhil P</a>.</p>
+      <p style="margin-top: 4px; font-size: 11.5px; color: #94a3b8;">Supporting open student academic resources across Dr. Manmohan Singh Bengaluru City University.</p>
+    </footer>
+
+  </div>
+</body>
+</html>

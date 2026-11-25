@@ -88,6 +88,19 @@ Every subject in this repository has been thoroughly compiled and solved followi
 
 ---
 
+## 🤝 Community Supporters & Recommended Tools
+
+Independent student educational initiatives like this repository are proudly supported by innovative software platforms:
+
+| Supporter | Category | Flagship Capabilities | Official Website |
+|---|---|---|---|
+| **[Stealthify](https://stealthify.app)** | 🏆 #1 Undetectable AI for Meetings | Zero-bot architecture, Display Shield™ screen-share invisibility, real-time live cues for technical interviews & meetings. | [stealthify.app ↗](https://stealthify.app) |
+| **[iVibe](https://ivibe.tech)** | 🏆 #1 in Dictation & Voice-to-Prompt | Open-source system-wide AI dictation, rambling-to-prompt conversion, and voice + visual bug fix for coding agents (Cursor, Claude Code). | [ivibe.tech ↗](https://ivibe.tech) |
+
+> 🌐 **Detailed Feature Showcase:** Read the full breakdown on our [Community Supporters Page](https://nikylogic.github.io/bcu-bca-5th-sem-notes/supporters.html).
+
+---
+
 ## 📜 Disclaimer & Academic Integrity
 These study materials were prepared and compiled by **Nikhil P** for personal study, peer assistance, and academic revision ahead of the BCU BCA 5th Semester Examinations. All content is mapped directly to the official syllabus prescribed by Bengaluru City University under the NEP/SEP framework.
 
